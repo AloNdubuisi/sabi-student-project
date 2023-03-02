@@ -1,0 +1,146 @@
+ /*general reseting*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif;
+}
+header{
+	background-image: url('../images/banner-bg.png');
+	height: 90vh;
+	background-size: cover;
+}
+/*navbar styles starts here*/
+header nav{
+	display: flex;
+	justify-content: space-around;
+	background: #00ADCC;
+	padding: 1rem;
+	text-transform: uppercase;
+}
+header nav ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+	color: #fff;
+	margin-top: 8px;
+}
+header nav h2 a{
+	text-decoration: none;
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+	color: #fff;
+}
+
+header nav ul a{
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+	font-size: .8rem;
+	font-weight: bold;
+}
+header nav ul a:active{
+	color: red;
+}
+header nav ul a:hover{
+	color: red;
+}
+
+/*here image styles here*/
+div#header-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 50px;
+}
+div#header-container div img{
+	width: 400px;
+}
+div#header-container div h1{
+	color: #fff;
+	font-size: 3.5rem;
+	letter-spacing: 1;
+	font-weight: 400;
+	margin: 20px;
+}
+div#header-container div h1 span{
+	font-weight: bolder;
+}
+div#header-container div p{
+	color: #fff;
+	margin: 20px;
+	line-height: 2;
+	font-size: 18px;
+	font-weight: lighter;
+}
+div#header-container div > a{
+	background: red;
+	color: #fff;
+	padding: 12px;
+	border-radius: 25px;
+	text-decoration: none;
+	margin: 80px 20px;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+/*Main section starts here*/
+main{
+	margin-top: 5rem;
+}
+main section#about{
+	display: flex;
+	padding: 50px;
+}
+main section#about div img{
+	width: 500px;
+}
+main section#about div h3{
+	font-size: 1.5rem;
+	line-height: 1.5;
+	margin-bottom: 25px;
+}
+main section#about div > p{
+	margin-bottom: 50px;
+}
+
+main section#about div p > a{
+	text-decoration: none;
+}
+
+main section#about div > a{
+	background: blue;
+	color: #fff;
+	padding: 12px;
+	border-radius: 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+/*media queries starts here*/
+@media(max-width: 768px){ 
+	header nav ul{
+		display: none;
+	}
+	header nav{
+		display: flex;
+		justify-content: flex-start;
+		padding: 1rem;
+	}
+	div#header-container div h1{
+		font-size: 2.2rem;
+	}
+	main section#about{
+		flex-direction: column;
+	}
+}
+@media(max-width: 320px){
+	header{
+		width: 550px;
+		height: 600px;
+	}
+}
